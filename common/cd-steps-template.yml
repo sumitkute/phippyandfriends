@@ -11,7 +11,7 @@ steps:
         --service-principal \
         -u $(aksSpId) \
         -p $(aksSpSecret) \
-        --tenant $(aksSpTenantId)
+        --tenant $(aksSpTenantId) --allow-no-subscriptions
     az aks get-credentials \
         -n $(aks) \
         -g $(rg)
